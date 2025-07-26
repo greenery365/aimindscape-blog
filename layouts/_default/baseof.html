@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1 { color: #333; }
+        .post { margin-bottom: 40px; }
+        .date { color: #666; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="/">{{ .Site.Title }}</a></h1>
+        <p>{{ .Site.Params.description }}</p>
+    </header>
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+</body>
+</html>
