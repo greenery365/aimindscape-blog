@@ -1,0 +1,16 @@
+baseURL = 'https://aimindscape.work'
+languageCode = 'ja'
+title = 'AI Mindscape'
+
+[params]
+  description = "AI学習の記録ブログ"
+  author = "AI学習者"
+  showReadingTime = true
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+  [[menu.main]]
+    name = "Posts" 
+    url = "/posts/"
